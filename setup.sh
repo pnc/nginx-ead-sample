@@ -5,9 +5,14 @@ set -e
 
 # Refresh package lists
 apt-get update
-# apt-get (quietly) (answering yes to all questions)
-# install nginx and nginx-extras packages
+# use the system package manager, apt-get to
+# (-q quietly) (-y answering yes to all questions)
+# install nginx (a robust, fast web server)
+# install nginx-extras (which contains the XSLT processing module)
 apt-get -q -y install nginx nginx-extras
+
+# Delete the default index file nginx installs
+rm -f /usr/share/nginx/html/index.html
 
 # Copy our samples into the web directory
 cp sample.xsl /usr/share/nginx/html/
