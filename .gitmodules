@@ -1,0 +1,3 @@
+[submodule "ead-stylesheets"]
+	path = ead-stylesheets
+	url = git@github.com:pnc/ead-stylesheets.git

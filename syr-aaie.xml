@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../ead_dtd/ead.dtd" [
+<!ENTITY scrc_name "scrc_name.txt">
+<!ENTITY su_address "su_address.txt">
+<!ENTITY su_name "su_name.txt">
+<!ENTITY subjindex "subjindex.txt">
+<!ENTITY summitref "summit_ref.txt">
+]>
+
+<!-- TEMPLATE VERSION 1.14, 12 Mar 2010 -->
+<!-- Added Belfer as container type -->
+
+<ead relatedencoding="MARC21">
+   <!--All items are required unless marked OPT.  Any optional items 
+not used should be commented out so that they don't appear in the viewable
+ document.-->
+
+<eadheader audience="internal" langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="DC">
+      <eadid countrycode="US" mainagencycode="NSyU" identifier="aaie">aaie</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper encodinganalog="Title">American Association of Industrial Editors (AAIE) Records</titleproper>
+            <subtitle>A description of the collection at Syracuse University</subtitle>
+         <author encodinganalog="Creator">MRC</author></titlestmt>
+         <publicationstmt>
+            <publisher encodinganalog="Publisher">&su_name;<lb/></publisher>
+            &su_address;
+            <date normal="2010-05-06" encodinganalog="Date">6 May 2010</date>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>Michele Combs<date normal="2010-05-06">6 May 2010</date>
+         </creation>
+         <langusage>
+            <language langcode="eng" encodinganalog="Language">English</language>
+         </langusage>
+      </profiledesc>
+      <!--Enter revisions in the format "## date - ## change (## initials)"--><revisiondesc>
+         <list>
+            <item></item>
+         </list>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection" type="inventory" relatedencoding="MARC21">
+      <did>
+         <head>Overview of the Collection</head>
+         <repository encodinganalog="852$a" label="Repository: ">
+         &su_name; <lb/> &su_address;
+         </repository>
+         <origination label="Creator: "><corpname encodinganalog="110">American Association of Industrial Editors.</corpname></origination>
+         <unittitle encodinganalog="245$a" label="Title: ">American Association of Industrial Editors (AAIE) Records</unittitle>
+         <unitdate encodinganalog="245$f" normal="1939/1958" type="inclusive" label="Inclusive Dates: ">1939-1958</unitdate>
+            <physdesc encodinganalog="300$a" label="Quantity: "><extent>1 linear ft.</extent></physdesc>
+         <abstract encodinganalog="520$a" label="Abstract: ">Minutes, reports, photographs, printed materials from the American professional editors' association.</abstract>
+         <unitid encodinganalog="099" label="Identification: " countrycode="US" repositorycode="NSyU">2750900</unitid>
+         <langmaterial label="Language: " encodinganalog="546">
+            <language langcode="eng">English</language>
+         </langmaterial>
+      </did>
+            
+      <bioghist encodinganalog="545">
+         <head>Biographical History</head>
+         
+      <p>The American Association of Industrial Editors was formed in 1938 by a small group of editors of industrial publications and house 
+		organs, who saw their mission as increasing professionalism among editors, improving quality of publications and serving management.  
+		Within a few months the fledgling organization had members from 17 states and by 1939 they began publishing the Editor's Notebook, 
+		aimed at editors of industrial and corporate magazines.  In 1941 AAIE became one of several charter members of the National Council 
+		of Industrial Editors Association (NCIEA), which later became the International Council of Industrial Editors (ICIE).  AAIE withdrew 
+		from ICIE in 1946 over policy differences but the two organizations merged again in 1970, becoming the International Association of 
+		Business Communicators (IABC).</p></bioghist>
+      
+      <scopecontent encodinganalog="520">
+         <head>Scope and Contents of the Collection</head>
+         <p>The <emph render="bold">American Association of Industrial Editors Records</emph> contains minutes, reports, photographs, printed materials and other items from the American professional editors' association.</p>
+      </scopecontent>
+      
+      <arrangement encodinganalog="351$a">
+         <head>Arrangement of the Collection</head>
+         <p>The collection is unprocessed and remains in original order.</p>
+      </arrangement>
+      
+      <!--<relatedmaterial encodinganalog="544 1">
+         <head>Related Material</head>
+         <p>## (MARC 544 1)</p></relatedmaterial>-->
+      
+      <!--Use archref, not extref, to link to related collections.--><!--<separatedmaterial encodinganalog="544 0">
+         <head>Separated Material</head>
+         <p>## OPT (MARC 544 0)</p>
+      </separatedmaterial>-->
+      
+      <!--<otherfindaid encodinganalog="555">
+         <head>Other Related Finding Aids</head>
+         <p>## OPT (MARC 555)</p>
+      </otherfindaid>-->
+      
+      <controlaccess>
+         <head>Subject and Genre Headings</head>
+         <!--For each, include source if possible (aat, lcsh, local, etc). Some have 
+defaults set in the template.-->
+         <subject encodinganalog="650" source="local">Business and Industry</subject>
+			<subject encodinganalog="650" source="local">Journalism</subject>
+			<!--<persname encodinganalog="600" source="lcnaf">##</persname>-->
+         <!--<famname encodinganalog="600" source="lcnaf">##</famname>-->
+         <corpname encodinganalog="610" source="lcnaf">American Association of Industrial Editors.</corpname><corpname encodinganalog="610" source="lcnaf">International Council of Industrial Editors.</corpname>
+         <!--<title encodinganalog="630" source="lcnaf">##</title>-->
+         <subject encodinganalog="650" source="lcsh">Editors -- Professional associations.</subject><subject encodinganalog="650" source="lcsh">House organs.</subject><!--<geogname encodinganalog="651" source="lcsh">##</geogname>-->
+         <genreform encodinganalog="655" source="aat">Minutes.</genreform><genreform encodinganalog="655" source="aat">Photographs.</genreform><genreform encodinganalog="655" source="aat">Reports.</genreform>
+         <occupation encodinganalog="656" source="lcsh">Editors.</occupation>
+         <!--<function encodinganalog="657">##</function>--></controlaccess>
+      
+      <accessrestrict encodinganalog="506">
+         <head>Access Restrictions</head>
+         <p>The collection is unprocessed and accessible by special permission only.</p>
+      </accessrestrict>
+      
+      <userestrict encodinganalog="540">
+         <head>Use Restrictions</head>
+         <p>Written permission must be obtained from SCRC and 
+all relevant rights holders before publishing quotations, excerpts or images from any 
+materials in this collection.</p>
+      </userestrict>
+      
+      <prefercite encodinganalog="524">
+         <head>Preferred Citation</head>
+         <p>Preferred citation for this material is as follows:</p>
+         <p>American Association of Industrial Editors (AAIE) Records, <lb/> &su_name; </p>
+      </prefercite>
+      
+      <acqinfo encodinganalog="541">
+         <head>Acquisition Information</head>
+         <p>Gift of <persname role="donor">Samuel V. Kennedy</persname>, 1980.</p>
+      </acqinfo>
+      
+      <!--<appraisal encodinganalog="583">
+         <head>Appraisal Information</head>
+         <p>##</p>
+      </appraisal>-->
+      
+      <!--<accruals encodinganalog="584">
+         <head>Accruals</head>
+         <p>## OPT (MARC 584)</p>
+      </accruals>-->
+      
+      <dsc type="othertype">
+   <head>Inventory</head>
+   <note><p>An inventory has not yet been created for this collection.  
+Please contact the Repository listed above for more information.</p><p></p></note>
+</dsc>
+   </archdesc>
+</ead>
