@@ -11,13 +11,6 @@ apt-get update
 # install nginx-extras (which contains the XSLT processing module)
 apt-get -q -y install nginx nginx-extras
 
-# Delete the default index file nginx installs
-rm -f /usr/share/nginx/html/index.html
-
-# Copy our samples into the web directory
-cp sample.xsl /usr/share/nginx/html/
-cp syr-aaie.xml /usr/share/nginx/html/
-
 # Copy our configuration file into place
 cp default-site.conf /etc/nginx/sites-available/default
 
