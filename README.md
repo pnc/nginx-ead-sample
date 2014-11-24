@@ -21,7 +21,7 @@ Finally, this repository contains a sample configuration (`default-site.conf`) f
 
 To run the example, you'll need to install [Vagrant](https://www.vagrantup.com) on your machine. Vagrant is a tool that automatically creates and configures virtual machines, saving you from having to create one yourself (which typically involves answering a lot of terse installer questions.) It also means the configuration of the virtual machine is encoded in a machine-readable script rather than as a set of human instructions.
 
-You will also need to know how to open a terminal and change directories. Instructions [for OS X are available.](http://mac.appstorm.net/how-to/utilities-how-to/how-to-use-terminal-the-basics/).
+You will also need to know how to open a terminal and change directories. Instructions [for OS X are available.](http://mac.appstorm.net/how-to/utilities-how-to/how-to-use-terminal-the-basics/)
 
 To create the virtual machine, open a terminal, navigate to the directory where you want to keep this repository, and run:
 
@@ -31,7 +31,7 @@ To create the virtual machine, open a terminal, navigate to the directory where 
 
 If the `vagrant up` command completes without errors, you should be able to view a sample (styled!) EAD file by pointing your browser to [http://localhost:8080/syr-aaie.xml](http://localhost:8080/syr-aaie.xml).
 
-If it doesn't work, please [https://github.com/pnc/nginx-ead-sample/issues/new](create an issue) with the output of the command or a description of where you got stuck.
+If it doesn't work, please [create an issue](https://github.com/pnc/nginx-ead-sample/issues/new) with copy-and-pasted output from your terminal and/or a description of where you got stuck.
 
 When you are finished, run
 
@@ -56,6 +56,8 @@ You'll then need to run `vagrant provision` to make it pick up your changes.
 If you start getting `500` error responses, you will want to check the Nginx error log for a detailed error. You can do this by running
 
     vagrant ssh -- "cat /var/log/nginx/error.log"
+
+I highly recommend using a programming editor rather than a text editor when working with XML or XSLT. Some free options for OS X are [TextMate2](https://github.com/textmate/textmate#download) and [Atom](https://atom.io).
 
 # Acknowledgements
 
