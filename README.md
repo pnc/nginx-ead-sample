@@ -57,7 +57,7 @@ If you start getting `500` error responses, you will want to check the Nginx err
 
     vagrant ssh -- "cat /var/log/nginx/error.log"
 
-I highly recommend using a programming editor rather than a text editor when working with XML or XSLT. Some free options for OS X are [TextMate2](https://github.com/textmate/textmate#download) and [Atom](https://atom.io).
+I highly recommend using a programming editor rather than a text editor when working with XML or XSLT. Some free options for OS X are [TextMate2](https://github.com/textmate/textmate#download) and [Atom](https://atom.io). Some people will probably threaten you for using these editors, but you should offer to fight them.
 
 # Acknowledgements
 
